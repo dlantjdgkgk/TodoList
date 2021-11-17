@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8"/>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Todo APP JavaScript</title>
+        <link rel="stylesheet" href="style.css" />
+        <script src="https://use.fontawesome.com/releases/v5.15.4/js/all.js"></script>
+    </head>
+    <body>
+        <div class="wrapper">
+            <div class="header">Todo App</div>
+            <div class="inputField">
+                <input id="todo_input"type="text" placeholder="Add your new todo" />
+                <button id="create_button"><i class="fas fa-plus"></i></button>
+            </div>
+            <ul class="todoList">
+                <li>
+                    <span class="description">내일 저녁반찬 사기</span>
+                    <span class="update iconWrap">
+                        <i class="fas fa-exchange-alt"></i>
+                    </span>
+                    <span class="remove iconWrap">
+                        <i class="fas fa-trash"></i>
+                    </span>
+                </li>
+            </ul>
+            <div class="footer">
+                <span>
+                    <span id="todo_Num">0</span>
+                    가지 일이 할당되었습니다.
+                </span>
+            </div>
+        </div>
+        <script src="data.json" type="text/javascript"></script>
+        <script src="script.js"></script>
+    </body>
+</html>
